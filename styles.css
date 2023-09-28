@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+section:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+.mode-toggle {
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mode-toggle i {
+    margin: 0 10px;
+}
+
+/* Light mode styles */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .mode-toggle {
+    color: yellow;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: lightgrey;
+    color: black;
+}
+
+.dark-mode .mode-toggle {
+    color: lightgrey;
+}
