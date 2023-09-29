@@ -1,61 +1,219 @@
-body {
-    background-color: black;
-    color: white;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-header, main, footer {
-    padding: 20px;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-section:hover {
-    background-color: red;
-    cursor: pointer;
-}
-
-ul {
-    list-style: none;
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
     padding: 0;
 }
 
-li {
-    margin: 5px 0;
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for background and text color */
 }
 
-.mode-toggle {
+/* Header styles */
+header {
+    /* background-color: #007bff; */
+    background: url('images/header_image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 20px 0;
     text-align: center;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff5555;
+}
+
+/* Header content */
+.header-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff5555;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff3333;
+}
+
+/* Section styles */
+.section {
+    padding: 50px 0;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-content h2 {
+    text-align: center;
+    border-bottom: 1px solid darkgray;
+}
+
+/* About section */
+.about h2 {
     font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Services section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gym_services{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gym_services p{
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.service:hover{
     cursor: pointer;
+    box-shadow: 5px 5px red;
+    border-radius: 15px;
+    
 }
 
-.mode-toggle i {
-    margin: 0 10px;
+.service img{
+    object-fit: cover;
+    width: 197px;
+    height: 330px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
 }
 
-/* Light mode styles */
+.service {
+    text-align: center;
+    margin: 20px;
+    flex: 1;
+}
+
+/* Contact section */
+.contact_details{
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Light Mode styles */
 .light-mode {
     background-color: white;
     color: black;
 }
 
-.light-mode .mode-toggle {
-    color: yellow;
-}
-
-/* Dark mode styles */
+/* Dark Mode styles */
 .dark-mode {
-    background-color: lightgrey;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
-.dark-mode .mode-toggle {
-    color: lightgrey;
+.mode-toggle{
+    display: inline-block;
 }
+/* Transition for sun and moon icons */
+.mode-toggle i {
+    margin: 0 10px;
+    transition: color 0.3s; /* Add transition for icon color */
+}
+
+/* Hover effect for sun and moon icons */
+.mode-toggle i:hover {
+    transform: scale(1.2); /* Optional: Add a scaling effect on hover */
+}
+
+
+/* Light and Dark Mode Toggle
+.mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.mode-toggle i {
+    margin: 0 10px;
+    color: #ff5555;
+    transition: color 0.3s;
+}
+
+.mode-toggle i:hover {
+    color: #ff3333;
+} */

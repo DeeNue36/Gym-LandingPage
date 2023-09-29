@@ -9,36 +9,81 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Go All Out!! Gym</h1>
+        <nav class="navbar">
+            <div class="brand">
+                <img src="logo.png" alt="Go All Out!! Gym Logo">
+                <h1>Go All Out!! Gym</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mode-toggle" onclick="toggleMode()">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </div>
+            
+        </body>
+        <div class="header-content">
+            <h1>Welcome to Go All Out!! Gym</h1>
+            <p>Your Journey to Fitness Starts Here</p>
+            <a href="#contact" class="cta-button">Contact Us</a>
+        </div>
     </header>
     <main>
-        <section class="about">
-            <h2>About Us</h2>
-            <p>We are dedicated to helping you achieve your fitness goals. Our state-of-the-art gym facilities and experienced trainers are here to support you on your fitness journey.</p>
+        <section id="about" class="section about">
+            <div class="section-content">
+                <h2>About Us</h2>
+                <p>We are dedicated to helping you achieve your fitness goals. Our state-of-the-art gym facilities and experienced trainers are here to support you on your fitness journey.</p>
+            </div>
         </section>
-        <section class="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Personal Training</li>
-                <li>Group Workouts</li>
-                <li>Nutritional Counseling</li>
-                <li>Cardio and Strength Training</li>
-                <li>Yoga and Pilates</li>
-            </ul>
+        <section id="services" class="section services">
+            <div class="section-content">
+                <h2>Our Services</h2>
+                <div class="gym_services">
+                    <div class="service">
+                        <img src="images/service1_image.jpg" alt="Personal Training">
+                        <p>Personal Training</p>
+                    </div>
+                    <div class="service">
+                        <img src="images/service2_image.jpg" alt="Group Workouts">
+                        <p>Group Workouts</p>
+                    </div>
+                    <div class="service">
+                        <img src="images/service3_image.jpg" alt="Nutritional Counseling">
+                        <p>Nutritional Counseling</p>
+                    </div>
+                    <div class="service">
+                        <img src="images/service4_image.jpg" alt="Cardio and Strength Training">
+                        <p>Cardio and Strength Training</p>
+                    </div>
+                    <div class="service">
+                        <img src="images/service5_image.jpg" alt="Yoga and Pilates">
+                        <p>Yoga and Pilates</p>
+                    </div>
+                </div>
+                
+            </div>
         </section>
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <p>Feel free to reach out to us for inquiries or to schedule a visit:</p>
-            <p>Email: olaaina@gymgoallout.com</p>
-            <p>Phone: +123-456-7890</p>
+        <section id="contact" class="section contact">
+            <div class="section-content">
+                <h2>Contact Us</h2>
+                <div class="contact_details">
+                    <p>Feel free to reach out to us for inquiries or to schedule a visit:</p>
+                    <p>Email: olaaina@gymgoallout.com</p>
+                    <p>Phone: +234-805-678-9017</p>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
+    <!-- <footer>
         <div class="mode-toggle" onclick="toggleDarkMode()">
             <i class="fas fa-sun"></i>
             <i class="fas fa-moon"></i>
         </div>
-    </footer>
+    </footer> -->
     <script src="script.js"></script>
 </body>
 </html>
